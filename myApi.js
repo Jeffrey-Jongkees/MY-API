@@ -9,7 +9,7 @@ app.use(express.json());
 function validateItem(item) {
     const schema = Joi.object({name: Joi.string().min(3).required()});
     const validation = schema.validate(item);
-    return validation;//test
+    return validation;
 };
 
 // Array 
